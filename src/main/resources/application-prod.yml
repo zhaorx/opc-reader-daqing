@@ -2,19 +2,19 @@ spring:
   main:
     web-application-type: none
 interval: 60000
-opc-url:  opc.tcp://10.65.162.130:4840
+opc-url: opc.tcp://10.65.162.130:4840
 username: TRQ_CQKSJ
 password: 57a98A209@77
 push-url: http://localhost:6666/gas/add
 push-multi-url: http://localhost:6666/gas/multi/add
-region: huabei
+region: daqing
 points:
   list:
-    - { point: 1459, pname: 苏桥_霸州分输站\流量计1参数\BKSSLL ,unit: Nm3/h ,tableName: sq_flow1_BKSSLL }
-    - { point: 1457, pname: 苏桥_霸州分输站\流量计1参数\GDYL ,unit: MPa ,tableName: sq_flow1_GDYL }
-    - { point: 1509,  pname: 苏桥_霸州分输站\流量计2参数\BKSSLL ,unit: Nm3/h ,tableName: sq_flow2_BKSSLL }
-    - { point: 1507,  pname: 苏桥_霸州分输站\流量计2参数\GDYL ,unit: MPa,tableName: sq_flow2_GDYL }
-    - { point: 1559,  pname: 苏桥_霸州分输站\流量计3参数\BKSSLL ,unit: Nm3/h ,tableName: sq_flow3_BKSSLL }
-    - { point: 1557,  pname: 苏桥_霸州分输站\流量计3参数\GDYL ,unit: MPa,tableName: sq_flow3_GDYL }
-    - { point: 1609,  pname: 苏桥_霸州分输站\流量计4参数\BKSSLL ,unit: Nm3/h,tableName: sq_flow4_BKSSLL }
-    - { point: 1607,  pname: 苏桥_霸州分输站\流量计4参数\GDYL ,unit: MPa,tableName: sq_flow4_GDYL }
+    - { point: QH1_FIQ6501_002F.PV, pname: 正向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6501_002F }
+    - { point: QH1_FIQ6601_002F.PV, pname: 正向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6601_002F }
+    - { point: QH1_FIQ6501_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6601_005F }
+    - { point: QH1_FIQ6601_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6601_005F }
+    - { point: QH1_FIQ6501_002B.PV, pname: 反向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6501_002B }
+    - { point: QH1_FIQ6601_002B.PV, pname: 反向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6601_002B }
+    - { point: QH1_FIQ6501_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6501_005F }
+    - { point: QH1_FIQ6601_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6601_005F }

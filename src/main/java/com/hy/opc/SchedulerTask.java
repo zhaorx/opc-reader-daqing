@@ -86,7 +86,7 @@ public class SchedulerTask {
     }
 
     public Double getPointValue(String point) throws Exception {
-        int point_int = Integer.parseInt(point);
+//        int point_int = Integer.parseInt(point);
         //创建OPC UA客户端
         if (opcUaClient == null) {
             opcUaClient = connector.createClient(opcUrl);
@@ -95,7 +95,9 @@ public class SchedulerTask {
         }
 
         //读
-        DataValue data = connector.readNodeByInt(opcUaClient, point_int);
+//        DataValue data = connector.readNodeByInt(opcUaClient, point_int);
+        logger.debug("######read_point:" + point);
+        DataValue data = connector.readNodeByString(opcUaClient, point);
         if (data.getValue().getValue() == null) {
             return Double.MIN_VALUE;
         }

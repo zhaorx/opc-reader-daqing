@@ -10,11 +10,7 @@ push-multi-url: http://localhost:6666/gas/multi/add
 region: daqing
 points:
   list:
-    - { point: QH1_FIQ6501_002F.PV, pname: 正向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6501_002F }
-    - { point: QH1_FIQ6601_002F.PV, pname: 正向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6601_002F }
-    - { point: QH1_FIQ6501_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6601_005F }
-    - { point: QH1_FIQ6601_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6601_005F }
-    - { point: QH1_FIQ6501_002B.PV, pname: 反向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6501_002B }
-    - { point: QH1_FIQ6601_002B.PV, pname: 反向标况瞬时流量 ,unit: Nm3/h ,tableName: dq_QH1_FIQ6601_002B }
-    - { point: QH1_FIQ6501_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6501_005F }
-    - { point: QH1_FIQ6601_005F.PV, pname: 绝对压力 ,unit: Mpa ,tableName: dq_QH1_FIQ6601_005F }
+    - { point: QH1_FIQ6501_002B.PV, tableName: daqing_sz_cq_QH1_FIQ6501_002B }
+    - { point: QH1_FIQ6601_002B.PV, tableName: daqing_sz_cq_QH1_FIQ6601_002B }
+    - { point: QH1_FIQ6501_005F.PV, tableName: daqing_sz_cq_QH1_FIQ6501_005F }
+    - { point: QH1_FIQ6601_005F.PV, tableName: daqing_sz_cq_QH1_FIQ6601_005F }

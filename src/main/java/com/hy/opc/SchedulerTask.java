@@ -57,9 +57,7 @@ public class SchedulerTask {
             Gas item = list.get(i);
             Gas g = new Gas();
             g.setTs(dateStr);
-            g.setPoint(region + sep + item.getTableName());
-            g.setPname(region + sep + item.getPname());
-            g.setUnit(item.getUnit());
+            g.setPoint(item.getTableName());
             g.setRegion(region);
             Double value = this.getPointValue(item.getPoint());
             if (value == Double.MIN_VALUE) {

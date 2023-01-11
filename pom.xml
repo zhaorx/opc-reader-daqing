@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hy</groupId>
-    <artifactId>opc-reader-daqing</artifactId>
+    <artifactId>opc-reader-dqsizhan</artifactId>
     <version>0.1</version>
     <name>opc-reader</name>
-    <description>opc-reader-daqing</description>
+    <description>opc-reader-dqsizhan</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
